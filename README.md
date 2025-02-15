@@ -1,32 +1,31 @@
 # Tic-Tac-Toe
-Creating a simple Tic Tac Toe game in Java involves implementing the game logic, user input handling, and basic console output. This version will be a two-player game played in the console.
-# Project Outline
-1.	*Board Representation:*
-   - The board is represented as a 2D array of characters (char[][] board), where each cell can be empty (' ') or marked by either player ('X' or 'O').
+This version of Tic Tac Toe is developed using Java, which implements the game logic, user input handling, and basic console output. The game is designed to be a classically played two-player game on the console.
+# Project Overview
+1. *Board Representation:*
+   - The board state is represented in a 2d character array (char[][] board) with every cell either empty (' ') or marked with the player's symbol ('X' or 'O').
      
-2.	*Game Flow:*
-   - The game starts with initializing the board (initializeBoard()).
-   - Players take turns.
-   - Players input their moves as row (1-3) and column (1-3).
-   - Each move is validated (isValidMove(row, col)) to ensure the chosen cell is empty and within bounds.
-   - After each move, the board is printed (printBoard()).
+2. *Game Flow:*
+   - The game starts from the initialization of the board (initializeBoard()).
+   - Each player takes their turn.
+   - The player makes a move by entering row(1-3) and column(1-3) coordinates.
+   - The move is validated (isValidMove(row, col)) to ensure that the cell chosen is empty and within bounds.
+   - After every turn, the board is printed (printBoard()).
 
-3.	*Winning Condition:*
-    Winning conditions are checked after each move:
-	 - Horizontal: Check if the entire row is filled with the current player's symbol.
-	 - Vertical: Check if the entire column is filled with the current player's symbol.
-   - Diagonal and Anti-diagonal: Check if either diagonal or anti-diagonal is filled with the current player's symbol.
-
+3. *Winning Condition:*
+   Winning conditions have to be checked after every move:
+	 - Horizontal: If all row cells are filled by the current player's symbol.
+	 - Vertical: If all column cells are filled by the current player's symbol.
+   - Diagonal and Anti-diagonal: If either diagonal or anti-diagonal is filled by the current player's symbol.
 4.	*End of Game:*
-   - The game ends when a player wins (isWinningMove() returns true) or when the board is full (isBoardFull() returns true).
-   - After the game ends, the final board state is displayed along with the result.
+   - The game stops when either a player wins (isWinningMove() returns true) or the board fills up (isBoardFull() returns true).
+   - At the end of the game, the final board state, with the result printed, is displayed.
 
-*Player input is handled using Scanner, reading integers for row and column inputs.*
+*User input is taken mainly through Scanner, where integers are used to represent row and column inputs.*
 
 *Running the Game:*
--	Compile the Java file (TicTacToe.java).
+-	Compile the TicTacToe.java file.
 -	Run the compiled class (java TicTacToe).
--	Follow the prompts to play the game.
-
+-	Follow the instructions to play the game. 
+	
 
 
