@@ -16,14 +16,17 @@ It is a simple Java implementation of Tic Tac Toe with game logic, handling user
 - Horizontal: All the cells of a row contain the current player's symbol.
   - Vertical: All the cells of a column contain the current player's symbol.
    - Diagonal and Anti-diagonal: The diagonal or anti-diagonal contains the current player's symbol.
-4.\t*End of Game:*
+4. *End of Game:*
   - Either if a player is winning (isWinningMove() == true) or if the board is full (isBoardFull() == true), the game is over.
 - The final state of the board, with the result displayed, is displayed at the end of the game.
 
 *User input is accepted primarily through the use of Scanner, where integers are used to represent row and column inputs.*
 *Running the Game:*
+
 -Compile the file TicTacToe.java.
+
 -Run the compiled class (java TicTacToe).
+
 -Play the game as per instructions.
 
 
