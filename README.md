@@ -22,8 +22,8 @@ It is a simple Java implementation of Tic Tac Toe with game logic, handling user
 
 *User input is accepted primarily through the use of Scanner, where integers are used to represent row and column inputs.*
 *Running the Game:*
--\tCompile the file TicTacToe.java.
--\tRun the compiled class (java TicTacToe).
--\tPlay the game as per instructions.
+-tCompile the file TicTacToe.java.
+-tRun the compiled class (java TicTacToe).
+-Play the game as per instructions.
 
 
