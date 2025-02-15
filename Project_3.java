@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Project_3 
 {
-    private static final int SIZE = 3;
-    private static final char EMPTY = ' ';
-    private static char[][] board = new char[SIZE][SIZE];
+    private static final int Size = 3;
+    private static final char Emt = ' ';
+    private static char[][] board = new char[Size][Size];
     private static char currentPlayer = 'X';
     private static boolean isGameFinished = false;
 
@@ -15,7 +15,7 @@ public class Project_3
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to Tic Tac Toe!");
+        System.out.println("Welcome to Tic Tac Toe");
 
         while (!isGameFinished) {
             printBoard();
@@ -30,17 +30,17 @@ public class Project_3
                 if (isWinningMove(row, col)) 
                 {
                     printBoard();
-                    System.out.println("Player " + currentPlayer + " wins!");
+                    System.out.println("Player " + currentPlayer + " wins");
                     isGameFinished = true;
                 } else if (isBoardFull()) {
                     printBoard();
-                    System.out.println("It's a draw!");
+                    System.out.println("It's a draw");
                     isGameFinished = true;
                 } else {
                     currentPlayer = (currentPlayer == 'X') ? 'O' : 'X';
                 }
             } else {
-                System.out.println("Invalid move! Please try again.");
+                System.out.println("Invalid move Please try again.");
             }
         }
 
@@ -49,34 +49,34 @@ public class Project_3
 
     private static void initializeBoard() 
     {
-        for (int i = 0; i < SIZE; i++)
+        for (int i = 0; i < Size; i++)
         {
-            for (int j = 0; j < SIZE; j++)
+            for (int j = 0; j < Size; j++)
             {
-                board[i][j] = EMPTY;
+                board[i][j] = Emt;
             }
         }
     }
 
     private static void printBoard() {
-        System.out.println("-------------");
-        for (int i = 0; i < SIZE; i++) 
+        System.out.println("  ");
+        for (int i = 0; i < Size; i++) 
         {
-            System.out.print("| ");
-            for (int j = 0; j < SIZE; j++) 
+            System.out.print(" | ");
+            for (int j = 0; j < Size; j++) 
             {
                 System.out.print(board[i][j] + " | ");
             }
             System.out.println();
-            System.out.println("-------------");
+            System.out.println("  ");
         }
     }
 
     private static boolean isValidMove(int row, int col)
     {
-        return row >= 0 && row < SIZE &&
-               col >= 0 && col < SIZE &&
-               board[row][col] == EMPTY;
+        return row >= 0 && row < Size &&
+               col >= 0 && col < Size &&
+               board[row][col] == Emt;
     }
 
     private static boolean isWinningMove(int row, int col) 
@@ -106,11 +106,11 @@ public class Project_3
 
     private static boolean isBoardFull() 
     {
-        for (int i = 0; i < SIZE; i++)
+        for (int i = 0; i < Size; i++)
         {
-            for (int j = 0; j < SIZE; j++) 
+            for (int j = 0; j < Size; j++) 
             {
-                if (board[i][j] == EMPTY) 
+                if (board[i][j] == Emt) 
                 {
                     return false;
                 }
